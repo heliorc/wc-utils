@@ -1,0 +1,28 @@
+{
+  "name": "@helio/wc-utils",
+  "version": "1.7.1",
+  "description": "",
+  "main": "lib/wc-utils.js",
+  "module": "lib/wc-utils.js",
+  "exports": {
+    "@helio/wc-utils": "node_modules/@helio/wc-utils/lib/wc-utils.js"
+  },
+  "rollup": {
+    "entry": "src/core/wc-utils.js",
+    "format": "es",
+    "imports": {
+      "babel-polyfill-dist": "node_modules/babel-polyfill/dist/polyfill.js",
+      "css-scope-polyfill": "node_modules/@helio/wc-tasks/poly/css.scope.js",
+      "object-assign-polyfill": "node_modules/@helio/wc-tasks/poly/object.assign.js"
+    }
+  },
+  "scripts": {
+    "install": "node install",
+    "doc": "node document.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@helio/wc-tasks": "^1.6.0"
+  }
+}
